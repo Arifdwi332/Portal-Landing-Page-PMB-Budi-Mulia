@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Google Fonts: Exo & Nunino -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" 
+    rel="stylesheet"
+    />
+
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap 5 JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Fonts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <!-- Logo Kiri -->
+        <a class="navbar-brand" href="#">
+          <img
+            src="assets/img/logo.png"
+            alt="MyLogo"
+            width="230"
+            height="61"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+
+        <!-- Toggler (untuk mobile) -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCentered"
+          aria-controls="navbarCentered"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Tengah dan Kanan -->
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarCentered"
+        >
+          <!-- Menu Tengah -->
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-nav active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-nav" href="#admisi">Admisi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-nav" href="#pendaftaran">Proses Pendaftaran</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-nav" href="#biaya">Biaya Kuliah</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-nav" href="#faq">FAQ</a>
+            </li>
+          </ul>
+
+          <!-- Tombol Kanan -->
+          <div class="d-flex">
+            <a href="#" class="btn btn-login text-login">Login</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section Fullscreen -->
+    <section
+      class="d-flex align-items-center hero-section"
+      style="height: 100vh; background-color: #000"
+      id="home"
+    >
+      <div class="container text-white">
+        <div class="row align-items-center">
+          <!-- Teks Kiri (60%) -->
+          <div class="col-md-7 text-center text-md-start">
+            <img src="assets/img/logo politeknik.png" alt="" />
+            <h1 class="mb-3 text-hero1">
+              Sementara yang Lain Masih
+              <span class="text-gold">Bingung</span>,<br />
+              Kamu Sudah Siap <span class="text-gold">Diperhitungkan</span>
+            </h1>
+            <p class="mb-4 text-hero2">
+              Mahir dalam teknologi Artificial Intelligence dan menjadi talenta
+              digital yang siap menjawab tantangan industri masa depan
+            </p>
+            <!-- tampil ketika desktop -->
+            <div class="row g-3 d-none d-md-flex">
+              <div class="col-auto">
+                <a href="#admisi" class="btn btn-cta-gold">Daftar Sekarang</a>
+              </div>
+              <div class="col-auto">
+                <a href="#admisi" class="btn btn-cta-outline-gold">Konsultasi GRATIS</a>
+              </div>
+            </div>
+            
+            <!-- tampil ketika mobile -->
+            <div class="btn-group-mobile d-flex d-md-none">
+              <a href="#admisi" class="btn btn-cta-gold">Daftar Sekarang</a>
+              <a href="#admisi" class="btn btn-cta-outline-gold">Konsultasi GRATIS</a>
+            </div>
+          </div>
+
+          <!-- Gambar Kanan (40%) -->
+          <div class="col-md-5 text-center mt-5 mt-md-0">
+            <div class="hero-container">
+              <img
+                src="assets/img/shadow-img-hero.png"
+                alt="Shadow"
+                class="shadow-img"
+              />
+              <img
+                src="assets/img/hero-image.png"
+                alt="Hero"
+                class="hero-img img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="section-2 py-5" id="admisi">
+      <div class="container">
+        <div class="row">
+            <h1 class="text-hero1 text-gold mb-4">Kalender Penerimaan Mahasiswa Baru</h1>
+        </div>
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3 mb-4">
+              <div class="list-group shadow sidebar-custom">
+                <a href="#" class="list-group-item list-group-item-action active-item">
+                  <i class="bi bi-calendar-event me-2"></i> Kalender
+                </a>
+                <a href="#pendaftaran" class="list-group-item list-group-item-action">
+                  <i class="bi bi-journal-text me-2"></i> Proses Pendaftaran
+                </a>
+                <a href="#biaya" class="list-group-item list-group-item-action">
+                  <i class="bi bi-cash-stack me-2"></i> Biaya Kuliah
+                </a>
+                <a href="#faq" class="list-group-item list-group-item-action">
+                  <i class="bi bi-question-circle-fill me-2"></i> FAQ
+                </a>
+              </div>
+            </div>
+
+            <!-- Main content -->
+            <div class="col-md-9">
+                <div class="main-content-custom shadow">
+                  <div class="row">
+                    <!-- Kolom Kiri -->
+                    <div class="col-md-4 left-column">
+                        <div class="card-custom-sec2 shadow">
+                            <div class="mb-3">
+                              <h5 class="fw-bold mb-1"><span class="text-gold">PLAI</span> BMD</h5>
+                              <p>2025</p>
+                              <p class="mb-1 text-muted">Student Admissions</p>
+                            </div>
+                        </div>
+                
+                      <div class="mb-4">
+                        <h5 class="fw-bold text-center text-gold">Pendaftaran Tahun Ajaran 2025/2026</h5>
+                        <p class="text-muted text-center">Periode: 15 Mei 2025 - 15 September 2025</p>
+                      </div>
+                    </div>
+                
+                    <!-- Kolom Kanan -->
+                    <div class="col-md-6 right-column text-center">
+                      <div class="mb-3">
+                        <strong class="text-gold">Pendaftaran</strong><br />
+                        15 Mei 2025 - 15 September 2025
+                      </div>
+                      <div class="mb-3">
+                        <strong class="text-gold">Seleksi</strong><br />
+                        Nilai Rapor dan Tes Online
+                      </div>
+                      <div class="mb-3">
+                        <strong class="text-gold">Pengumuman</strong><br />
+                        Maksimal 3 hari kerja setelah tes
+                      </div>
+                      <div class="mb-3">
+                        <strong class="text-gold">Biaya Pendaftaran</strong><br />
+                        Rp. 350.000
+                      </div>
+                
+                      <a href="#" class="btn btn-warning mt-3">Mulai Pendaftaran</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="section-proses py-5" id="pendaftaran">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Card 0 -->
+          <div class="col-md-6 col-lg-4">
+              <h1 class="text-gold fw-bold mb-4 text-heading-sec3">Proses Pendaftaran</h1>
+          </div>
+          <!-- Card 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="step-card">
+              <div class="step-number">1</div>
+              <h5 class="step-title">Pendaftaran Online</h5>
+              <p class="step-text">
+                Lengkapi formulir pendaftaran secara daring untuk memulai proses menjadi Calon Mahasiswa PLAI BMD.
+              </p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="step-card">
+              <div class="step-number">2</div>
+              <h5 class="step-title">Pembayaran Pendaftaran dan Upload Bukti</h5>
+              <p class="step-text">
+                Lakukan pembayaran sesuai biaya pendaftaran dan unggah bukti transfer untuk verifikasi.
+              </p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="step-card">
+              <div class="step-number">3</div>
+              <h5 class="step-title">Unggah Dokumen</h5>
+              <p class="step-text">
+                Kirim hasil scan dokumen persyaratan seperti rapor, ijazah, dan sertifikat pendukung.
+              </p>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="step-card">
+              <div class="step-number">4</div>
+              <h5 class="step-title">Tes Seleksi Online</h5>
+              <p class="step-text">
+                Ikuti tes seleksi online yang mencakup logika, motivasi, dan kesiapan belajar.
+              </p>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="step-card">
+              <div class="step-number">5</div>
+              <h5 class="step-title">Pengumuman</h5>
+              <p class="step-text">
+                Cek hasil seleksi melalui portal penerimaan resmi dan lanjut ke tahap registrasi ulang.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="section-biaya py-5" id="biaya">
+      <div class="container">
+        <h2 class="text-gold fw-bold text-center mb-5">Biaya Kuliah</h2>
+        <div class="row g-4 justify-content-center">
+          <!-- Card 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="biaya-card">
+              <h5 class="program-title">Kecerdasan Buatan & Robotik</h5>
+              <hr />
+              <div class="biaya-item d-flex justify-content-between">
+                <span class="text-muted">Biaya Kuliah Awal*</span>
+                <span class="fw-bold text-gold label-harga">Rp 35.000.000</span>
+              </div>
+              <p class="text-muted text-small"><span class="text-gold">Bisa diangsur maksimal 8x di dalam 2 tahun</span><br>
+                <span class="text-muted">*besaran minimum, berdasarkan kesanggupan calon mahasiswa</span>
+              </p>
+              <div class="biaya-item d-flex justify-content-between mt-3">
+                <span class="text-muted">Angsuran I</span>
+                <span class="text-gold fw-bold label-harga">Rp 7.500.000</span>
+              </div>
+              <div class="biaya-item d-flex justify-content-between">
+                <span class="text-muted">Angsuran II</span>
+                <span class="text-gold fw-bold label-harga">Rp 7.500.000</span>
+              </div>
+              <hr />
+              <div class="biaya-item d-flex justify-content-between">
+                <span class="text-muted">Total Biaya 8 Semester**</span>
+                <span class="fw-bold label-harga">Rp 120.000.000</span>
+              </div>
+              <p class="text-muted text-small"><span class="text-gold">4 tahun</span><br>
+                <span class="text-muted">**Menyesuaikan besaran Biaya Kuliah Awal</span>
+              </p>
+            </div>
+          </div>
+    
+          <!-- Card 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="biaya-card">
+              <h5 class="program-title">Sains Data Terapan</h5>
+              <hr />
+              <div class="biaya-item d-flex justify-content-between">
+                <span class="text-muted">Biaya Kuliah Awal</span>
+                <span class="fw-bold text-gold label-harga">Rp 35.000.000</span>
+              </div>
+              <p class="text-muted text-small"><span class="text-gold">Bisa dicicil maksimal 8x di dalam 2 tahun</span><br>
+                <span class="text-muted">*besaran minimum, berdasarkan kesanggupan calon mahasiswa</span>
+              </p>
+              <div class="biaya-item d-flex justify-content-between mt-3">
+                <span class="text-muted">Angsuran I</span>
+                <span class="fw-bold text-gold label-harga">Rp 7.500.000</span>
+              </div>
+              <div class="biaya-item d-flex justify-content-between">
+                <span class="text-muted">Angsuran II</span>
+                <span class="fw-bold text-gold label-harga">Rp 7.500.000</span>
+              </div>
+              <hr />
+              <div class="biaya-item d-flex justify-content-between">
+                <span class="text-muted">Total Biaya 8 Semester</span>
+                <span class="fw-bold label-harga">Rp 120.000.000</span>
+              </div>
+              <p class="text-muted text-small"><span class="text-gold">4 tahun</span><br>
+                <span class="text-muted">**Menyesuaikan besaran Biaya Kuliah Awal</span>
+              </p>
+            </div>
+          </div>
+    
+          <!-- Card 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="biaya-card">
+              <h5 class="program-title">Rekayasa Keamanan Siber</h5>
+              <hr />
+              <div class="biaya-item d-flex justify-content-between">
+                <span class="text-muted">Biaya Kuliah Awal</span>
+                <span class="fw-bold text-gold">Rp 35.000.000</span>
+              </div>
+              <p class="text-muted text-small"><span class="text-gold">Bisa dicicil maksimal 8x di dalam 2 tahun</span><br>
+                <span class="text-muted">*besaran minimum, berdasarkan kesanggupan calon mahasiswa</span>
+              </p>
+              <div class="biaya-item d-flex justify-content-between mt-3">
+                <span class="text-muted">Angsuran I</span>
+                <span class="fw-bold text-gold">Rp 7.500.000</span>
+              </div>
+              <div class="biaya-item d-flex justify-content-between">
+                <span class="text-muted">Angsuran II</span>
+                <span class="fw-bold text-gold">Rp 7.500.000</span>
+              </div>
+              <hr />
+              <div class="biaya-item d-flex justify-content-between">
+                <span class="text-muted">Total Biaya 8 Semester</span>
+                <span class="fw-bold">Rp 120.000.000</span>
+              </div>
+              <p class="text-muted text-small"><span class="text-gold">4 tahun</span><br>
+                <span class="text-muted">**Menyesuaikan besaran Biaya Kuliah Awal</span>
+              </p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Tombol CTA -->
+         <div class="row g-3 justify-content-center mt-5">
+              <div class="col-auto">
+                <a href="#admisi" class="btn btn-cta-gold">Daftar Sekarang</a>
+              </div>
+              <div class="col-auto">
+                <a href="#admisi" class="btn btn-cta-outline-gold"
+                  >Hubungi Tim Admisi</a
+                >
+              </div>
+            </div>
+         </div>
+    </section>
+
+
+    <!-- Section 5 -->
+    <section class="section-faq py-5" id="faq">
+      <div class="container">
+        <h2 class="text-center text-gold fw-bold mb-5">
+          Pertanyaan Umum tentang Penerimaan Mahasiswa Baru
+        </h2>
+    
+        <div class="faq-wrapper p-4 rounded">
+          <div class="row g-3">
+            <!-- FAQ Item -->
+            <div class="col-md-6 col-lg-4">
+              <div class="faq-item p-3 rounded">
+                <details>
+                  <summary>
+                    Apa saja biaya kuliah di PLAI?
+                    <i class="bi bi-chevron-down float-end"></i>
+                  </summary>
+                  <p class="mt-2 text-muted small">
+                    Biaya kuliah di PLAI BMD terdiri dari biaya pendaftaran sebesar Rp. 350.000, biaya Kuliah Awal Rp. 35.000.000 (bisa dicicil), dan Biaya Kuliah Semester Rp. 15.000.000 (bisa dicicil).
+                  </p>
+                </details>
+              </div>
+            </div>
+        
+            <div class="col-md-6 col-lg-4">
+              <div class="faq-item p-3 rounded">
+                <details>
+                  <summary>
+                    Apakah perlu memiliki background IT untuk mendaftar?
+                    <i class="bi bi-chevron-down float-end"></i>
+                  </summary>
+                  <p class="mt-2 text-muted small">
+                    Tidak perlu memiliki background IT khusus, tetapi calon mahasiswa diharapkan memiliki minat tinggi pada bidang teknologi, kemampuan dasar logika dan matematika yang baik, serta kemauan untuk belajar yang kuat.
+                  </p>
+                </details>
+              </div>
+            </div>
+        
+            <div class="col-md-6 col-lg-4">
+              <div class="faq-item p-3 rounded">
+                <details>
+                  <summary>
+                    Apa saja yang dipersiapkan untuk tes seleksi?
+                    <i class="bi bi-chevron-down float-end"></i>
+                  </summary>
+                  <p class="mt-2 text-muted small">
+                    Tes seleksi meliputi: Tes logika dan penalaran, dan Kalibrasi Nilai Raport. Persiapkan diri dengan melatih soal logika dan memahami perkembangan teknologi AI terkini.
+                  </p>
+                </details>
+              </div>
+            </div>
+        
+            <div class="col-md-6 col-lg-4">
+              <div class="faq-item p-3 rounded">
+                <details>
+                  <summary>
+                    Bagaimana sistem perkuliahan di PLAI BMD?
+                    <i class="bi bi-chevron-down float-end"></i>
+                  </summary>
+                  <p class="mt-2 text-muted small">
+                    PLAI BMD menerapkan sistem perkuliahan berbasis Project-Based Learning dengan 70% praktek dan 30% teori. Kelas berlangsung 5 hari dalam seminggu dengan durasi 8 jam per hari. Mahasiswa akan banyak mengerjakan proyek nyata dan berkolaborasi dengan industri.
+                  </p>
+                </details>
+              </div>
+            </div>
+        
+            <div class="col-md-6 col-lg-4">
+              <div class="faq-item p-3 rounded">
+                <details>
+                  <summary>
+                    Apakah mahasiswa akan membuat produk atau startup sendiri di PLAI BMD?
+                    <i class="bi bi-chevron-down float-end"></i>
+                  </summary>
+                  <p class="mt-2 text-muted small">
+                    Ya, mahasiswa PLAI BMD akan dibimbing untuk membuat produk digital sejak tahun pertama. Tersedia program inkubasi startup, bootcamp, dan bimbingan dari praktisi industri. Selain itu, mahasiswa juga berkesempatan mengembangkan produk kolaboratif bersama mitra industri ataupun mandiri crowdfund yang siap di-launch ke pasar.
+                  </p>
+                </details>
+              </div>
+            </div>
+        
+            <div class="col-md-6 col-lg-4">
+              <div class="faq-item p-3 rounded">
+                <details>
+                  <summary>
+                    Di mana lokasi kampus PLAI BMD berada?
+                    <i class="bi bi-chevron-down float-end"></i>
+                  </summary>
+                  <p class="mt-2 text-muted small">
+                    Kampus PLAI BMD berlokasi di Kota Yogyakarta, salah satu kota pendidikan terbaik di Indonesia. Akses mudah, lingkungan belajar kondusif, dan dikelilingi komunitas teknologi yang aktif.
+                  </p>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </section>
+
+    <!-- Section 6 -->
+    <section class="cta-section py-5">
+         <div class="container">
+           <div class="cta-box shadow">
+             <div class="d-flex justify-content-between align-items-center flex-wrap">
+               <div>
+                 <h5 class="text-gold">Bergabunglah dengan PLAI BMD Sekarang!</h5>
+                 <div class="fw-bold" style="font-size: 24px;">Terbuka untuk tahun ajaran 2025/2026</div>
+                 <div class="mt-1" style="font-size: 18px;">
+                   Informasi selengkapnya di <a href="https://start.plai.ac.id" target="_blank" class="text-gold">start.plai.ac.id</a>
+                 </div>
+               </div>
+               <div class="mt-3 mt-md-0">
+                 <a href="#" class="btn btn-cta-gold">Daftar PMB</a>
+               </div>
+             </div>
+           </div>
+         </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section text-white py-5">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Logo & Deskripsi -->
+          <div class="col-md-4">
+            <img src="assets/img/logo politeknik.png" alt="PLAI Logo" class="mb-3" style="max-height: 50px;">
+            <p class="small">
+              Politeknik Artificial Intelligence (AI) Budi Mulia Dua (PLAI BMD) — Universitas pertama di Indonesia di bidang AI.
+            </p>
+            <div class="social-icons d-flex gap-3 mt-3">
+              <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-white fs-5"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="text-white fs-5"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+    
+          <!-- Tautan Cepat -->
+          <div class="col-md-4">
+            <h6 class="text-warning mb-3">Tautan Cepat</h6>
+            <ul class="list-unstyled small text-white-50">
+              <li class="active">Home</li>
+              <li>Proses Pendaftaran</li>
+              <li>Biaya Kuliah</li>
+              <li>FAQ</li>
+            </ul>
+          </div>
+    
+          <!-- Kontak Kami -->
+          <div class="col-md-4">
+            <h6 class="text-warning mb-3">Kontak Kami</h6>
+            <ul class="list-unstyled small text-white-50 contact-list">
+              <li>
+                <span class="contact-icon"><i class="bi bi-geo-alt-fill"></i></span>
+                Jl. Raya Tajem No.KM. 3, Kenayan, Wedomartani, Kec. Ngemplak, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55584
+              </li>
+              <li class="mt-2">
+                <span class="contact-icon"><i class="bi bi-telephone-fill"></i></span>
+                +62 811 1958 8887
+              </li>
+              <li class="mt-2">
+                <span class="contact-icon"><i class="bi bi-envelope-fill"></i></span>
+                admisi@plai.ac.id
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Copyright Section with Separator -->
+      <div class="container">
+        <hr class="footer-separator">
+        <div class="text-center py-3">
+          <p class="small mb-0">©PLAI BMD 2025, All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
